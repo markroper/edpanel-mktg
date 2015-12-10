@@ -32,11 +32,24 @@ export default class extends React.Component {
 
   //It would be really nice if the NavBar had a sweet logo next to the EdPanel Name
   render() {
+    let topBarStyle = {
+      borderRadius: '0px',
+      opacity: '0.7',
+      zIndex: '10'
+    };
+
+    let edPanelLogo = {
+      background: 'url("/assets/images/edpanel.svg")',
+      height: '30px',
+      width: '136px',
+      marginTop: '-5px'
+    };
+
     var message = this.state.message;
     return (
       <div>
-        <Navbar fluid>
-          <NavbarBrand>EdPanel</NavbarBrand>
+        <Navbar fluid style={topBarStyle}>
+          <NavbarBrand><div><div style={edPanelLogo}></div></div></NavbarBrand>
           <Nav pullRight>
             <NavItem eventKey={1} href="#" onClick={this.openModal.bind(this)}>Contact Us!</NavItem>
           </Nav>

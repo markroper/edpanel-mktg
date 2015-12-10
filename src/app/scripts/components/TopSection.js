@@ -42,9 +42,8 @@ export default class extends React.Component {
 
     return (
       <div id="container" style={containerStyle}>
-        <img id="topSectionBgImg" style={bgImgStyle} src="/assets/images/notebookWithHandCroppedBlue.png"/>
-        <Slogan/>
         <EdPanelNavbar/>
+        <Slogan/>
       </div>
     );
   }

@@ -19,19 +19,23 @@ export default class extends React.Component {
     };
 
     let containerStyle = {
-      margin: 'auto',
-      marginTop: '100px',
+      top:'0',
+      paddingTop: '100px',
       position: 'absolute',
       width: '100%',
-      textAlign: 'center'
-    };
+      textAlign: 'center',
+      height: '555px',
+      backgroundImage: 'url(/assets/images/notebookWithHandCroppedBlue.png)',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center center'
+  };
 
     //It would be great if this worked more like a carousel or something of that nature, but at least there's something
     // on the page
     return (
       <div style={containerStyle}>
-        <h1 id="companyName" style={mottoStyle}>EdPanel</h1>
-        <h1 id="motto" style={mottoStyle}>Let data drive your school.</h1>
+        <h1 id="motto" style={mottoStyle}>Let data drive your school</h1>
       </div>
     );
   }
