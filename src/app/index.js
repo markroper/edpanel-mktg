@@ -7,13 +7,12 @@ angular.module('edpanel', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource',
       requireBase: false
     });
     var rootUrl = '';
-    var roles = constsProvider.$get().roles;
     //Configure the routes!
     $stateProvider
-      .state('login', {
-        url: rootUrl + '/login',
-        templateUrl: rootUrl + '/components/routecontrollers/login/login.html',
-        controller: 'LoginController',
+      .state('land', {
+        url: rootUrl + '/',
+        templateUrl: rootUrl + 'components/routecontrollers/land/land.html',
+        controller: 'LandCtrl',
         data: {}
       });
 

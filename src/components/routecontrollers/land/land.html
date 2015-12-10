@@ -1,0 +1,31 @@
+<div class="land" flex layout="column" layout-fill >
+  <md-toolbar md-scroll-shrink ng-if="true" class="header-toolbar" layout="row">
+    <div class="md-toolbar-tools" tabindex="0">
+      <div class="edpanel-logo" flex="none" ng-click="goToHome())"></div>
+      <span flex></span>
+      <md-button id="contact-us" class="md-raised md-primary" ng-click="showContactForm($event)">Contact Us</md-button>
+    </div>
+  </md-toolbar>
+  <md-content flex layout-fill layout="column">
+    <div class="content-section section-one" layout="column" layout-align="center center">
+      <h1>SOME STUFF HERE</h1>
+    </div>
+    <div class="even content-section section-two" layout="column" layout-align="center center">
+      <h1>SOME STUFF HERE</h1>
+    </div>
+    <div class="content-section section-three" layout="column" layout-align="center center">
+      <h1>SOME STUFF HERE</h1>
+    </div>
+    <div class="even content-section section-four" layout="column" layout-align="center center">
+      <h1>SOME STUFF HERE</h1>
+    </div>
+    <div layout="row" class="product-footer" layout-align="start center">
+      <div class="edpanel-logo" flex="none"></div>
+      <div flex></div>
+      <div layout="row" layout-align="center center">
+        <md-button class="md-primary" ng-href="http://myedpanel.com/about" target="_blank">About Us</md-button>
+        <md-button class="md-primary" ng-href="http://myedpanel.com/privacy" target="_blank">Privacy</md-button>
+      </div>
+    </div>
+  </md-content>
+</div>

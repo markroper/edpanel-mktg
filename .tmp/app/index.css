@@ -1,0 +1,48 @@
+*:focus {
+  outline: none; }
+
+.product-footer {
+  background-color: #E8E8E8;
+  margin-top: 20px;
+  padding: 45px 0px 45px 0px; }
+
+.header-toolbar {
+  background-color: white !important; }
+
+.edpanel-logo {
+  height: 30px;
+  width: 136px;
+  background-size: 100%;
+  background: url('../assets/images/edpanel.svg');
+  cursor: pointer; }
+
+.attendancetable {
+  position: relative;
+  height: 320px;
+  position: relative; }
+  .attendancetable input {
+    height: 14px;
+    line-height: 1; }
+  .attendancetable .close-attendance {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    right: 0px; }
+  .attendancetable .attendance-ui-grid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.land .content-section.even {
+  background-color: #FCFCFC; }
+.land .content-section h1 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+md-dialog-content {
+  padding: 15px;
+  min-width: 400px; }
+  md-dialog-content md-icon {
+    color: #757575; }

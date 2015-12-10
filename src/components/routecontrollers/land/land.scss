@@ -1,0 +1,18 @@
+.land {
+  	.content-section.even {
+	  background-color: $off-white;
+	}
+	.content-section {
+	  h1 {
+		margin-top:100px;
+		margin-bottom:100px;
+	  }
+	}
+}
+md-dialog-content {
+  padding: 15px;
+  min-width: 400px;
+  md-icon {
+	color: #757575;
+  }
+}

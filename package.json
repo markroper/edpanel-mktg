@@ -2,7 +2,7 @@
   "name": "edpanel",
   "version": "0.0.1",
   "dependencies": {
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.3.3"
   },
   "devDependencies": {
     "ansi-regex": "~1.1.0",
