@@ -35,11 +35,89 @@
     left: 0;
     right: 0; }
 
+.land .align-center {
+  text-align: center; }
+.land .goals-description {
+  max-width: 600px; }
+.land .h1, .land span, .land div {
+  text-align: center;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+.land .jumbotron {
+  background-color: #EDEDED;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../assets/images/kid-teacher.jpg");
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+  .land .jumbotron h1 {
+    margin-bottom: 150px; }
 .land .content-section.even {
-  background-color: #FCFCFC; }
-.land .content-section h1 {
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  background-color: white; }
+.land .content-section {
+  min-height: 500px;
+  background-color: #EDEDED; }
+.land .goals-image {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../assets/images/grade_goal.png"); }
+.land .section-overview {
+  min-height: 450px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../assets/images/section_detail.png"); }
+.land .consolidate-detail {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .land .consolidate-detail .consolidate-explain {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .land .consolidate-detail .consolidate-explain > span {
+      max-width: 900px; }
+  .land .consolidate-detail .consolidate {
+    width: 300px;
+    height: 200px;
+    color: white;
+    background-image: url("../../assets/images/consolidate.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+.land .face-container {
+  margin-bottom: 25px;
+  text-align: center; }
+  .land .face-container .face-circle {
+    width: 144px;
+    height: 144px;
+    border: 1px solid #C9C9C9;
+    border-radius: 72px;
+    margin: 10px;
+    background-color: white; }
+    .land .face-container .face-circle .face {
+      height: 100px;
+      width: 100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .land .face-container .face-circle .student {
+      background-image: url("../../assets/images/student.png"); }
+    .land .face-container .face-circle .teacher {
+      background-image: url("../../assets/images/teacher.png"); }
+    .land .face-container .face-circle .admin {
+      background-image: url("../../assets/images/admin.png"); }
+    .land .face-container .face-circle .parent {
+      background-image: url("../../assets/images/parent.png"); }
 
 md-dialog-content {
   padding: 15px;

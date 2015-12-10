@@ -25,7 +25,7 @@ angular.module('edpanel')
       });
       $scope.goToHome = function() {
 
-      }
+      };
       $scope.showContactForm = function(ev) {
         $mdDialog.show({
           controller: DialogController,
@@ -50,7 +50,7 @@ angular.module('edpanel')
       };
       $scope.goToHome = function() {
         $state.go('land', {schoolId: statebag.school.id});
-      }
+      };
   }]);
 
 function DialogController($scope, $mdDialog) {
