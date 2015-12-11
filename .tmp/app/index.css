@@ -55,6 +55,8 @@
   color: #666666; }
 .land .section-three h1 {
   margin-bottom: 75px; }
+.land button span, .land button div, .land a span {
+  cursor: pointer; }
 .land .h1, .land span, .land div {
   text-align: center;
   cursor: default;

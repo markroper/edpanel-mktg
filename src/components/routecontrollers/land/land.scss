@@ -25,6 +25,9 @@
   .section-three h1 {
 	margin-bottom: 75px;
   }
+  button span, button div, a span {
+	cursor: pointer;
+  }
   .h1, span, div {
 	text-align: center;
 	cursor: default;
