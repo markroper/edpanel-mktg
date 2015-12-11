@@ -2,12 +2,12 @@
   outline: none; }
 
 .product-footer {
-  background-color: #E8E8E8;
+  background-color: #F1F8E9;
   margin-top: 20px;
   padding: 45px 0px 45px 0px; }
 
 .header-toolbar {
-  background-color: white !important; }
+  background-color: #F1F8E9 !important; }
 
 .edpanel-logo {
   height: 30px;
@@ -49,7 +49,7 @@
   -ms-user-select: none;
   user-select: none; }
 .land .jumbotron {
-  background-color: #EDEDED;
+  background-color: #F1F8E9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -61,8 +61,15 @@
 .land .content-section.even {
   background-color: white; }
 .land .content-section {
-  min-height: 500px;
-  background-color: #EDEDED; }
+  min-height: 475px;
+  background-color: #F1F8E9; }
+  .land .content-section h1 {
+    margin-top: 50px; }
+.land .performance-over-time {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../assets/images/behavior_graph.png"); }
 .land .goals-image {
   width: 200px;
   height: 200px;
@@ -120,7 +127,7 @@
       background-image: url("../../assets/images/parent.png"); }
 
 md-dialog-content {
-  padding: 15px;
+  padding: 40px;
   min-width: 400px; }
   md-dialog-content md-icon {
     color: #757575; }

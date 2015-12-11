@@ -1,10 +1,10 @@
-$off-white:#EDEDED;
+$off-white:#F1F8E9;
 
 *:focus {
   outline: none;
 }
 .product-footer {
-  background-color: #E8E8E8;
+  background-color: $off-white;
   margin-top: 20px;
   padding: 45px 0px 45px 0px;
   a {
@@ -12,7 +12,7 @@ $off-white:#EDEDED;
   }
 }
 .header-toolbar {
-  background-color: white !important;
+  background-color: $off-white !important;
 }
 .edpanel-logo {
   height: 30px;

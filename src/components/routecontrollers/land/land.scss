@@ -31,8 +31,17 @@
 	background-color: white;
   }
   .content-section {
-	min-height:500px;
+	min-height:475px;
 	background-color: $off-white;
+	h1 {
+	  margin-top:50px;
+	}
+  }
+  .performance-over-time {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/behavior_graph.png");
   }
   .goals-image {
 	width:200px;
@@ -104,7 +113,7 @@
   }
 }
 md-dialog-content {
-  padding: 15px;
+  padding: 40px;
   min-width: 400px;
   md-icon {
 	color: #757575;

@@ -60,6 +60,6 @@ function DialogController($scope, $mdDialog) {
   $scope.submit = function(answer) {
     $mdDialog.hide(answer);
   };
-  $scope.types = ['Potential Customer', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
+  $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
   $scope.message = {};
 }
