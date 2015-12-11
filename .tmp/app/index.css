@@ -3,8 +3,9 @@
 
 .product-footer {
   background-color: #DCEDC8;
-  margin-top: 20px;
   padding: 45px 0px 45px 0px; }
+  .product-footer span {
+    color: #969595; }
 
 .header-toolbar {
   background-color: #F1F8E9 !important; }
@@ -50,8 +51,10 @@
   background-image: url("../../assets/images/histogram.png"); }
 .land .md-display-2 {
   color: #3D3D3D; }
-.land .md-headline {
+.land .md-headline, .land .md-title {
   color: #666666; }
+.land .section-three h1 {
+  margin-bottom: 75px; }
 .land .h1, .land span, .land div {
   text-align: center;
   cursor: default;

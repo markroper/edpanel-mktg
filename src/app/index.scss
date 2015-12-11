@@ -6,6 +6,9 @@ $off-white:#DCEDC8;
 .product-footer {
   background-color: $off-white;
   padding: 45px 0px 45px 0px;
+  span {
+    color: rgb(150, 149, 149);
+  }
   a {
 
   }
@@ -21,6 +24,6 @@ $off-white:#DCEDC8;
   cursor: pointer;
 }
 // injector
-@import '../components/routecontrollers/land/land.scss';
 @import '../components/directives/attendancetable/attendancetable.scss';
+@import '../components/routecontrollers/land/land.scss';
 // endinjector
