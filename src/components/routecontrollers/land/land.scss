@@ -1,0 +1,112 @@
+.land {
+  .align-center {
+	text-align: center;
+  }
+  .goals-description {
+	max-width: 600px;
+  }
+  .h1, span, div {
+	text-align: center;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  .jumbotron {
+	background-color: $off-white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/kid-teacher.jpg");
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	h1 {
+	  margin-bottom:150px;
+	}
+  }
+  .content-section.even {
+	background-color: white;
+  }
+  .content-section {
+	min-height:500px;
+	background-color: $off-white;
+  }
+  .goals-image {
+	width:200px;
+	height:200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/grade_goal.png");
+  }
+  .section-overview {
+	min-height:450px;
+	margin-top:15px;
+	margin-bottom:15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/section_detail.png");
+  }
+  .consolidate-detail {
+	padding-left: 20px;
+	padding-right:20px;
+	.consolidate-explain {
+	  padding-left:5px;
+	  padding-right:5px;
+	  > span {
+		max-width:900px;
+	  }
+	}
+	.consolidate {
+	  width: 300px;
+	  height: 200px;
+	  color: white;
+	  background-image: url("../../assets/images/consolidate.jpg");
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	}
+  }
+  .face-container {
+	margin-bottom: 25px;
+	text-align: center;
+	.face-circle {
+	  width: 144px;
+	  height:144px;
+	  border: 1px solid #C9C9C9;
+	  border-radius: 72px;
+	  margin:10px;
+	  background-color:white;
+	  .face {
+		height:100px;
+		width:100px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	  }
+	  .student {
+		background-image: url("../../assets/images/student.png");
+	  }
+	  .teacher {
+		background-image: url("../../assets/images/teacher.png");
+	  }
+	  .admin {
+		background-image: url("../../assets/images/admin.png");
+	  }
+	  .parent {
+		background-image: url("../../assets/images/parent.png");
+	  }
+	}
+  }
+}
+md-dialog-content {
+  padding: 15px;
+  min-width: 400px;
+  md-icon {
+	color: #757575;
+  }
+}

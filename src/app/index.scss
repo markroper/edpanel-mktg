@@ -1,0 +1,27 @@
+$off-white:#EDEDED;
+
+*:focus {
+  outline: none;
+}
+.product-footer {
+  background-color: #E8E8E8;
+  margin-top: 20px;
+  padding: 45px 0px 45px 0px;
+  a {
+
+  }
+}
+.header-toolbar {
+  background-color: white !important;
+}
+.edpanel-logo {
+  height: 30px;
+  width: 136px;
+  background-size: 100%;
+  background: url('../assets/images/edpanel.svg');
+  cursor: pointer;
+}
+// injector
+@import '../components/directives/attendancetable/attendancetable.scss';
+@import '../components/routecontrollers/land/land.scss';
+// endinjector
