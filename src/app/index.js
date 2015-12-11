@@ -9,10 +9,28 @@ angular.module('edpanel', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource',
     var rootUrl = '/home';
     //Configure the routes!
     $stateProvider
-      .state('land', {
-        url: rootUrl + '/',
+      .state('root', {
+        url: rootUrl + '',
+        templateUrl: rootUrl + '/components/routecontrollers/root/root.html',
+        controller: 'RootCtrl',
+        data: {}
+      })
+      .state('root.land', {
+        url: '/',
         templateUrl: rootUrl + '/components/routecontrollers/land/land.html',
         controller: 'LandCtrl',
+        data: {}
+      })
+      .state('root.privacy', {
+        url: '/privacy',
+        templateUrl: rootUrl + '/components/routecontrollers/privacy/privacy.html',
+        controller: 'PrivacyCtrl',
+        data: {}
+      })
+      .state('root.about', {
+        url: '/about',
+        templateUrl: rootUrl + '/components/routecontrollers/about/about.html',
+        controller: 'AboutCtrl',
         data: {}
       });
     $mdThemingProvider.theme('default')

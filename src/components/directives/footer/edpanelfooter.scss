@@ -1,0 +1,14 @@
+.product-footer {
+  background-color: $off-white;
+  padding: 45px 0px 45px 0px;
+  span {
+    color: rgb(150, 149, 149);
+  }
+  .edpanel-logo {
+    height: 30px;
+    width: 136px;
+    background-size: 100%;
+    background: url('../../../assets/images/edpanel.svg');
+    cursor: pointer;
+  }
+}

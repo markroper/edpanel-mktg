@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('edpanel')
   .directive('edpanelEnterKeypress', function() {
     return function(scope, element, attrs) {
@@ -18,51 +17,9 @@ angular.module('edpanel')
         });
     };
   })
-  .controller('LandCtrl', ['$scope', 'api', '$state', '$window', '$location','$mdDialog', '$mdMedia',
-    function ($scope, api, $state, $window, $location, $mdDialog, $mdMedia) {
+  .controller('LandCtrl', ['$scope', 'api', '$state', '$window', '$location',
+    function ($scope, api, $state, $window, $location) {
       $scope.$on('$viewContentLoaded', function() {
         $window.ga('send', 'pageview', { page: $location.url() });
       });
-      $scope.goToHome = function() {
-
-      };
-      $scope.DialogController = function($scope, $mdDialog) {
-        $scope.cancel = function() {
-          $mdDialog.cancel();
-        };
-        $scope.submit = function(answer) {
-          $mdDialog.hide(answer);
-          if($scope.message) {
-            api.contactUs.save({}, $scope.message);
-          }
-        };
-        $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
-        $scope.message = {};
-      };
-
-      $scope.showContactForm = function(ev) {
-        $mdDialog.show({
-          controller: $scope.DialogController,
-          templateUrl: api.basePrefix + '/components/routecontrollers/land/contactus.html',
-          parent: angular.element(document.body),
-          targetEvent: ev,
-          openFrom: ev.el,
-          closeTo: ev.el,
-          clickOutsideToClose:true,
-          fullscreen: $mdMedia('sm') && $scope.customFullscreen
-        })
-          .then(function(answer) {
-            $scope.status = 'You said the information was "' + answer + '".';
-          }, function() {
-            $scope.status = 'You cancelled the dialog.';
-          });
-        $scope.$watch(function() {
-          return $mdMedia('sm');
-        }, function(sm) {
-          $scope.customFullscreen = (sm === true);
-        });
-      };
-      $scope.goToHome = function() {
-        $state.go('land', {});
-      };
   }]);

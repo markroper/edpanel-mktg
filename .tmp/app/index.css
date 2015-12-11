@@ -1,12 +1,6 @@
 *:focus {
   outline: none; }
 
-.product-footer {
-  background-color: #DCEDC8;
-  padding: 45px 0px 45px 0px; }
-  .product-footer span {
-    color: #969595; }
-
 .header-toolbar {
   background-color: #F1F8E9 !important; }
 
@@ -16,6 +10,24 @@
   background-size: 100%;
   background: url('../assets/images/edpanel.svg');
   cursor: pointer; }
+
+.md-display-2 {
+  color: #3D3D3D; }
+
+.md-headline, .md-title {
+  color: #666666; }
+
+.product-footer {
+  background-color: #DCEDC8;
+  padding: 45px 0px 45px 0px; }
+  .product-footer span {
+    color: #969595; }
+  .product-footer .edpanel-logo {
+    height: 30px;
+    width: 136px;
+    background-size: 100%;
+    background: url('../../../assets/images/edpanel.svg');
+    cursor: pointer; }
 
 .attendancetable {
   position: relative;
@@ -36,6 +48,9 @@
     left: 0;
     right: 0; }
 
+.about span {
+  color: #666666; }
+
 .land .align-center {
   text-align: center; }
 .land .goals-description {
@@ -49,10 +64,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../../assets/images/histogram.png"); }
-.land .md-display-2 {
-  color: #3D3D3D; }
-.land .md-headline, .land .md-title {
-  color: #666666; }
 .land .section-three h1 {
   margin-bottom: 75px; }
 .land button span, .land button div, .land a span {
@@ -148,3 +159,6 @@ md-dialog-content {
   min-width: 400px; }
   md-dialog-content md-icon {
     color: #757575; }
+
+.privacy span {
+  color: #666666; }

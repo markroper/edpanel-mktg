@@ -1,17 +1,9 @@
 $off-white:#DCEDC8;
+$large-font-gray: #3D3D3D;
+$small-font-gray: #666666;
 
 *:focus {
   outline: none;
-}
-.product-footer {
-  background-color: $off-white;
-  padding: 45px 0px 45px 0px;
-  span {
-    color: rgb(150, 149, 149);
-  }
-  a {
-
-  }
 }
 .header-toolbar {
   background-color: #F1F8E9 !important;
@@ -23,7 +15,17 @@ $off-white:#DCEDC8;
   background: url('../assets/images/edpanel.svg');
   cursor: pointer;
 }
+.md-display-2 {
+  color: $large-font-gray;
+}
+.md-headline, .md-title {
+  color: $small-font-gray;
+}
 // injector
+@import '../components/directives/footer/edpanelfooter.scss';
 @import '../components/directives/attendancetable/attendancetable.scss';
+@import '../components/routecontrollers/about/about.scss';
 @import '../components/routecontrollers/land/land.scss';
+@import '../components/routecontrollers/privacy/privacy.scss';
+@import '../components/routecontrollers/root/root.scss';
 // endinjector
