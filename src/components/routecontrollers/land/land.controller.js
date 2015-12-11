@@ -26,9 +26,23 @@ angular.module('edpanel')
       $scope.goToHome = function() {
 
       };
+      $scope.DialogController = function($scope, $mdDialog) {
+        $scope.cancel = function() {
+          $mdDialog.cancel();
+        };
+        $scope.submit = function(answer) {
+          $mdDialog.hide(answer);
+          if($scope.message) {
+            api.contactUs.save({}, $scope.message);
+          }
+        };
+        $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
+        $scope.message = {};
+      };
+
       $scope.showContactForm = function(ev) {
         $mdDialog.show({
-          controller: DialogController,
+          controller: $scope.DialogController,
           templateUrl: api.basePrefix + '/components/routecontrollers/land/contactus.html',
           parent: angular.element(document.body),
           targetEvent: ev,
@@ -52,14 +66,3 @@ angular.module('edpanel')
         $state.go('land', {});
       };
   }]);
-
-function DialogController($scope, $mdDialog) {
-  $scope.cancel = function() {
-    $mdDialog.cancel();
-  };
-  $scope.submit = function(answer) {
-    $mdDialog.hide(answer);
-  };
-  $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
-  $scope.message = {};
-}
