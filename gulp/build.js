@@ -118,7 +118,10 @@ gulp.task('html', ['wiredep', 'injector:css', 'injector:js', 'partials'], functi
     .pipe(htmlFilter.restore())
     .pipe($.replace('scripts/', '/home/scripts/'))
     .pipe($.replace('styles/', '/home/styles/'))
-    .pipe($.replace('http://fonts.googleapis.com/css?', 'https://fonts.googleapis.com/css?'))
+    .pipe($.replace('../../../assets', '/home/assets'))
+    .pipe($.replace('../../assets', '/home/assets'))
+    .pipe($.replace('../assets', '/home/assets'))
+    .pipe ($.replace('http://fonts.googleapis.com/css?', 'https://fonts.googleapis.com/css?'))
     .pipe(gulp.dest('dist/'))
     .pipe($.size({ title: 'dist/', showFiles: true }));
 });
