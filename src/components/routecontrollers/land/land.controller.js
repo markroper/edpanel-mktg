@@ -29,7 +29,7 @@ angular.module('edpanel')
       $scope.showContactForm = function(ev) {
         $mdDialog.show({
           controller: DialogController,
-          templateUrl: 'components/routecontrollers/land/contactus.html',
+          templateUrl: api.basePrefix + '/components/routecontrollers/land/contactus.html',
           parent: angular.element(document.body),
           targetEvent: ev,
           openFrom: ev.el,
@@ -49,7 +49,7 @@ angular.module('edpanel')
         });
       };
       $scope.goToHome = function() {
-        $state.go('land', {schoolId: statebag.school.id});
+        $state.go('land', {});
       };
   }]);
 

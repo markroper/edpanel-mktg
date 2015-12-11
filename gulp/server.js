@@ -26,14 +26,14 @@ function browserSyncInit(baseDir, files, browser) {
   }
 
   browserSync.instance = browserSync.init(files, {
-    startPath: '/ui/',
+    startPath: '/home/',
     server: {
       baseDir: baseDir,
       middleware: [
         corsMiddleware,
         modRewrite([
           '!\\.\\w+$ /index.html [L]',
-          '(.*)/ui/(.*) $1/$2'
+          '(.*)/home/(.*) $1/$2'
         ])
       ],
       routes: routes

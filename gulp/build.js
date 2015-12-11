@@ -77,8 +77,8 @@ gulp.task('partials', function () {
       quotes: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'teacherdashboard',
-      root: '/ui'
+      module: 'edpanel',
+      root: '/home'
     }))
     .pipe(gulp.dest('.tmp/inject/'));
 });
@@ -116,8 +116,8 @@ gulp.task('html', ['wiredep', 'injector:css', 'injector:js', 'partials'], functi
       quotes: true
     }))
     .pipe(htmlFilter.restore())
-    .pipe($.replace('scripts/', '/ui/scripts/'))
-    .pipe($.replace('styles/', '/ui/styles/'))
+    .pipe($.replace('scripts/', '/home/scripts/'))
+    .pipe($.replace('styles/', '/home/styles/'))
     .pipe($.replace('http://fonts.googleapis.com/css?', 'https://fonts.googleapis.com/css?'))
     .pipe(gulp.dest('dist/'))
     .pipe($.size({ title: 'dist/', showFiles: true }));

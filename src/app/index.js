@@ -6,12 +6,12 @@ angular.module('edpanel', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource',
       enabled: true,
       requireBase: false
     });
-    var rootUrl = '';
+    var rootUrl = '/home';
     //Configure the routes!
     $stateProvider
       .state('land', {
         url: rootUrl + '/',
-        templateUrl: rootUrl + 'components/routecontrollers/land/land.html',
+        templateUrl: rootUrl + '/components/routecontrollers/land/land.html',
         controller: 'LandCtrl',
         data: {}
       });

@@ -100,6 +100,6 @@ angular.module('edpanel')
           'put': { method:'PUT', headers: {'Content-Type': 'application/json'} },
           'post': { method:'POST', headers: {'Content-Type': 'application/json'} }
         }),
-      basePrefix: '/ui'
+      basePrefix: '/home'
     };
 });
