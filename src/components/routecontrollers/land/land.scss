@@ -5,6 +5,23 @@
   .goals-description {
 	max-width: 600px;
   }
+  .admin-customize {
+	min-height: 315px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/customize.png");
+  }
+  .school-histogram {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../assets/images/histogram.png");
+  }
+  .md-display-2 {
+	color: #3D3D3D;
+  }
+  .md-headline {
+	color: #666666;
+  }
   .h1, span, div {
 	text-align: center;
 	cursor: default;
@@ -38,7 +55,6 @@
 	}
   }
   .performance-over-time {
-	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-image: url("../../assets/images/behavior_graph.png");
