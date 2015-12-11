@@ -1,6 +1,6 @@
 'use strict';
-angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidenav', 'api', 'UAService',
-  function($scope, $state, $mdSidenav, api, UAService) {
+angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidenav', 'api', 'UAService','$mdDialog', '$mdMedia',
+  function($scope, $state, $mdSidenav, api, UAService, $mdDialog, $mdMedia) {
     $scope.UAService = UAService;
     if($state.current.name === 'root') {
       $state.go('root.land');
@@ -18,7 +18,6 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidena
       $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
       $scope.message = {};
     };
-
     $scope.showContactForm = function(ev) {
       $mdDialog.show({
         controller: $scope.DialogController,

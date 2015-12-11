@@ -17,18 +17,6 @@
 .md-headline, .md-title {
   color: #666666; }
 
-.product-footer {
-  background-color: #DCEDC8;
-  padding: 45px 0px 45px 0px; }
-  .product-footer span {
-    color: #969595; }
-  .product-footer .edpanel-logo {
-    height: 30px;
-    width: 136px;
-    background-size: 100%;
-    background: url('../../../assets/images/edpanel.svg');
-    cursor: pointer; }
-
 .attendancetable {
   position: relative;
   height: 320px;
@@ -47,6 +35,18 @@
     bottom: 0;
     left: 0;
     right: 0; }
+
+.product-footer {
+  background-color: #DCEDC8;
+  padding: 45px 0px 45px 0px; }
+  .product-footer span {
+    color: #969595; }
+  .product-footer .edpanel-logo {
+    height: 30px;
+    width: 136px;
+    background-size: 100%;
+    background: url('../../../assets/images/edpanel.svg');
+    cursor: pointer; }
 
 .about span {
   color: #666666; }
