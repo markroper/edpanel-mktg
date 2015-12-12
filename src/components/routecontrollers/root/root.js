@@ -20,8 +20,10 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', 'api', 'UA
       $scope.message = {};
     };
     $scope.showContactForm = function(ev) {
+      var sc = $scope.$new();
+      sc.api = api;
       $mdDialog.show({
-        scope: $scope,
+        scope: sc,
         controller: DialogController,
         templateUrl: api.basePrefix + '/components/routecontrollers/root/contactus.html',
         parent: angular.element(document.body),
@@ -30,8 +32,7 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', 'api', 'UA
         closeTo: ev.el,
         clickOutsideToClose:true,
         fullscreen: $mdMedia('sm') && $scope.customFullscreen
-      })
-        .then(function(answer) {
+      }).then(function(answer) {
           $scope.status = 'You said the information was "' + answer + '".';
         }, function() {
           $scope.status = 'You cancelled the dialog.';
@@ -48,10 +49,13 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', 'api', 'UA
   }]);
 
 var DialogController = function($scope, $mdDialog) {
+  $scope.hide = function() {
+    $mdDialog.hide();
+  };
   $scope.cancel = function() {
     $mdDialog.cancel();
   };
-  $scope.submit = function(answer) {
+  $scope.answer = function(answer) {
     $mdDialog.hide(answer);
     if($scope.message) {
       $scope.api.contactUs.save({}, $scope.message);

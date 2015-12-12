@@ -1,5 +1,10 @@
 .privacy {
-  span {
-    color: $small-font-gray;
+  text-align: left;
+  .padding-wrapper {
+    padding: 25px;
+    div {
+      color: $small-font-gray;
+      text-align: left;
+    }
   }
 }
