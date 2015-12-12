@@ -1,11 +1,12 @@
 'use strict';
-angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidenav', 'api', 'UAService','$mdDialog', '$mdMedia',
-  function($scope, $state, $mdSidenav, api, UAService, $mdDialog, $mdMedia) {
+angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', 'api', 'UAService','$mdDialog', '$mdMedia',
+  function($scope, $state, api, UAService, $mdDialog, $mdMedia) {
     $scope.UAService = UAService;
+    $scope.api = api;
     if($state.current.name === 'root') {
       $state.go('root.land');
     }
-    $scope.DialogController = function($scope, $mdDialog) {
+    $scope.dialogController = function($scope, $mdDialog) {
       $scope.cancel = function() {
         $mdDialog.cancel();
       };
@@ -20,7 +21,8 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidena
     };
     $scope.showContactForm = function(ev) {
       $mdDialog.show({
-        controller: $scope.DialogController,
+        scope: $scope,
+        controller: DialogController,
         templateUrl: api.basePrefix + '/components/routecontrollers/root/contactus.html',
         parent: angular.element(document.body),
         targetEvent: ev,
@@ -44,3 +46,17 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', '$mdSidena
       $state.go('root.land', {});
     };
   }]);
+
+var DialogController = function($scope, $mdDialog) {
+  $scope.cancel = function() {
+    $mdDialog.cancel();
+  };
+  $scope.submit = function(answer) {
+    $mdDialog.hide(answer);
+    if($scope.message) {
+      $scope.api.contactUs.save({}, $scope.message);
+    }
+  };
+  $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
+  $scope.message = {};
+};
