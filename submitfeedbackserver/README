@@ -1,0 +1,5 @@
+this server runs and listens for http connections on a specified port (default 3000). The only supported http method is a POST - if a POST is seen, an email is sent to a hardcoded list of recipients containing the body of the POST.
+
+to run it:
+npm install
+node email-server.js
