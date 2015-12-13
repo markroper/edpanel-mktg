@@ -1,5 +1,7 @@
-h1.md-display-4 {
-  font-size: 105px;
+@media(max-width: 700px) {
+  h1.md-display-4 {
+    font-size: 85px;
+  }
 }
 .align-center {
   text-align: center;
