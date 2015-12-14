@@ -36,14 +36,16 @@ button span, button div, a span {
   -ms-user-select: none;
   user-select: none;
 }
+.jumbotron, .jumbotron .md-display-2 {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
 .jumbotron {
   background-color: $off-white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../../assets/images/kid-teacher.jpg");
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .content-section.even {
   background-color: white;
