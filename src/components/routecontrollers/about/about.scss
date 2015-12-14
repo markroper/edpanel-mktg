@@ -1,5 +1,16 @@
 .about {
-  span {
+  .team-member-face {
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    background-color: #F44336;
+    margin-left: 25px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-top:25px;
+  }
+  .team-member-bio {
+    max-width:750px;
     color: $small-font-gray;
   }
 }
