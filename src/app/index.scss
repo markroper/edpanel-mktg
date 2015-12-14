@@ -22,7 +22,6 @@ $small-font-gray: #666666;
   color: $small-font-gray;
 }
 // injector
-@import '../components/directives/attendancetable/attendancetable.scss';
 @import '../components/directives/footer/edpanelfooter.scss';
 @import '../components/routecontrollers/about/about.scss';
 @import '../components/routecontrollers/land/land.scss';
