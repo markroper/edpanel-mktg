@@ -1,4 +1,7 @@
 .about {
+  .md-display-1 {
+    color: $large-font-gray;
+  }
   .team-member-face {
     width: 130px;
     height: 130px;
@@ -12,6 +15,14 @@
     margin-right: 50px;
     margin-bottom: 25px;
     margin-top:25px;
+  }
+  .subpoint {
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:40px;
+    margin-right:40px;
+    text-align:left;
+    color: $small-font-gray;
   }
   .team-member-bio {
     margin-top:25px;
