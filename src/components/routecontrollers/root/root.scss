@@ -1,5 +1,9 @@
 #contact-us {
-  padding: 5px 15px;
   background-color: #4CAF50 !important;
   color: $large-font-gray;
+}
+
+#contact-us, #demo-button {
+  padding: 5px 15px;
+  background-color: #EB5331;
 }
