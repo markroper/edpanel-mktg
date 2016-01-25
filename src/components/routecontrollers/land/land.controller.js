@@ -34,12 +34,6 @@ angular.module('edpanel')
                 fullscreen: $mdMedia('sm') && $scope.customFullscreen
             })
         };
-        $scope.image = [{
-            src: "../../../assets/images/CaseOne.jpg"
-        }];
-        $(document).ready(function(){
-            $('.slider').slider({full_width: true});
-        });
       $scope.$on('$viewContentLoaded', function() {
         $window.ga('send', 'pageview', { page: $location.url() });
 
