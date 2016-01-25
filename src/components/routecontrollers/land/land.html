@@ -1,12 +1,14 @@
 <div class="land" flex layout="column" layout-fill >
-  <div class="jumbotron" flex layout-fill layout="column" layout-align="end center">
-    <h1 class="md-display-4">Putting data to work for schools</h1>
+  <div class="jumbotron" flex layout-fill layout="row" layout-align="left center">
+    <div flex="5"></div>
+    <div >
+        <h1 style="text-align:center;"  class="md-display-4">Putting data to work for schools</h1>
+        <md-button ng-click="showDemo($event)" id="video-button" class="md-cornered md-primary md-raised">Watch our demo</md-button>
+
+
     <!--<h4 class="md-display-2" hide show-gt-sm>dashboards, reports, goals, analytics & alerts, all in one place</h4>-->
   </div>
 </div>
-<div class="slider">
-  <ul class="slides">
-    <li>
       <div class="even content-section section-two slider-content" layout="column" layout-align="space-between center">
         <div layout layout-align="center center">
           <h1 class="md-display-2">Making data-driven decision-making easy</h1>
@@ -23,8 +25,6 @@
           </div>
         </div>
       </div>
-    </li>
-    <li>
       <div class="content-section section-three slider-content" layout="column" layout-align="space-around center">
         <h1 class="md-display-2">For all stakeholders</h1>
         <div class="face-container" layout="row" layout-wrap layout-align="center center">
@@ -55,8 +55,6 @@
           <div flex="100" layout layout-wrap layout-align="center center"><div class="md-headline" style="max-width:750px;margin-top:50px;margin-bottom:50px;">Unlocking the data within schools, EdPanel offers a differentiated and customizable user experience focused on the needs of each stakeholder</div></div>
         </div>
       </div>
-    </li>
-    <li>
       <div class="even content-section section-three slider-content" layout-wrap layout="row" layout-align="center stretch">
         <div class="margin-wrapper" flex="100" flex-gt-sm="50" layout="column" layout-align="center center">
           <h1 class="md-display-2">Making every school data-driven</h1>
@@ -69,8 +67,6 @@
         </div>
         <div flex="100" flex-gt-sm="50" class="section-overview"></div>
       </div>
-    </li>
-    <li>
       <div class="content-section section-three performance-over-time slider-content" layout="column" layout-align="center center">
         <div class="trends-over-time" layout="column" layout-align="space-between center">
           <h1 class="md-display-2">Helping students learn how to succeed</h1>
@@ -80,8 +76,6 @@
             or advisors to make adjustments to stay on track.</div>
         </div>
       </div>
-    </li>
-    <li>
       <div class="even content-section section-four slider-content" layout-wrap layout="row" layout-align="center stretch">
         <div flex="0" flex-gt-sm="30" class="school-histogram"></div>
         <div flex="100" flex-gt-sm="60" layout="column" layout-align="center center">
@@ -89,8 +83,6 @@
           <span class="md-headline margin-wrapper">EdPanel comes ready to use, but also supports powerful customization and configuration options so users can get what they need from their data without additional integrations</span>
         </div>
       </div>
-    </li>
-  </ul>
-</div>
+
 
 <edpanelfooter></edpanelfooter>

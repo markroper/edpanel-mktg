@@ -17,8 +17,23 @@ angular.module('edpanel')
         });
     };
   })
-  .controller('LandCtrl', ['$scope', 'api', '$state', '$window', '$location',
-    function ($scope, api, $state, $window, $location) {
+  .controller('LandCtrl', ['$scope', 'api', '$state', '$window', '$location','$mdDialog','$mdMedia',
+    function ($scope, api, $state, $window, $location, $mdDialog, $mdMedia) {
+        $scope.showDemo = function(ev) {
+            var sc = $scope.$new();
+            sc.api = api;
+            $mdDialog.show({
+                scope: sc,
+                controller: DialogController,
+                templateUrl: api.basePrefix + '/components/routecontrollers/root/showdemo.html',
+                parent: angular.element(document.body),
+                targetEvent: ev,
+                openFrom: ev.el,
+                closeTo: ev.el,
+                clickOutsideToClose:true,
+                fullscreen: $mdMedia('sm') && $scope.customFullscreen
+            })
+        };
         $scope.image = [{
             src: "../../../assets/images/CaseOne.jpg"
         }];

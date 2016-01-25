@@ -19,21 +19,7 @@ angular.module('edpanel').controller('RootCtrl', ['$scope', '$state', 'api', 'UA
       $scope.types = ['Teacher', 'Administrator', 'Student', 'Potential Partner', 'Potential Team Member', 'Potential Investor'];
       $scope.message = {};
     };
-    $scope.showDemo = function(ev) {
-      var sc = $scope.$new();
-      sc.api = api;
-      $mdDialog.show({
-        scope: sc,
-        controller: DialogController,
-        templateUrl: api.basePrefix + '/components/routecontrollers/root/showdemo.html',
-        parent: angular.element(document.body),
-        targetEvent: ev,
-        openFrom: ev.el,
-        closeTo: ev.el,
-        clickOutsideToClose:true,
-        fullscreen: $mdMedia('sm') && $scope.customFullscreen
-      })
-    };
+
     $scope.showContactForm = function(ev) {
       var sc = $scope.$new();
       sc.api = api;
