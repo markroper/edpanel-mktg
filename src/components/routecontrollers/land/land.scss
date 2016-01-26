@@ -3,8 +3,13 @@
     max-width: 300px;
     font-size: 45px !important;
     line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .bottom-text {
+    margin-bottom:10px;
   }
 }
+
 
 @media(min-width: 700px) {
   h1.md-display-4 {
@@ -12,7 +17,11 @@
     font-size: 112px !important;
     line-height: 112px;
   }
+  .bottom-text {
+    margin-bottom:35px;
+  }
 }
+
 
 @media(min-width: 1026px) {
   #video-button {
