@@ -1,81 +1,85 @@
 <div class="land" flex layout="column" layout-fill >
-  <div class="jumbotron" flex layout-fill layout="column" layout-align="end center">
-    <h1 class="md-display-4">Putting data to work for schools</h1>
-    <!--<h4 class="md-display-2" hide show-gt-sm>dashboards, reports, goals, analytics & alerts, all in one place</h4>-->
-  </div>
+  <div class="jumbotron" flex layout-fill layout="row" layout-align="left center">
+    <div flex="5"></div>
+    <div>
+        <h1 style="text-align:center;"  class="md-display-4">Putting data to work for schools</h1>
+        <md-button ng-click="showDemo($event)" id="video-button" class="md-cornered md-primary md-raised">Watch our demo</md-button>
 </div>
-<div class="even content-section section-two" layout="column" layout-align="space-between center">
-  <div layout layout-align="center center">
-    <h1 class="md-display-2">Making data-driven decision-making easy</h1>
-  </div>
-  <div class="consolidate-detail" layout-wrap layout="row" layout-align="center center">
-    <div flex="100" flex-gt-sm="33" layout layout-align="center center">
-      <div class="consolidate"></div>
     </div>
-    <div flex="100" flex-gt-sm="66" layout="column" class="consolidate-explain align-center" layout-wrap="">
+      <div class="even content-section section-two slider-content" layout="column" layout-align="space-between center">
+        <div layout layout-align="center center">
+          <h1 class="md-display-2">Making data-driven decision-making easy</h1>
+        </div>
+        <div class="consolidate-detail" layout-wrap layout="row" layout-align="center center">
+          <div flex="100" flex-gt-sm="33" layout layout-align="center center">
+            <div class="consolidate"></div>
+          </div>
+          <div flex="100" flex-gt-sm="66" layout="column" class="consolidate-explain align-center" layout-wrap="">
       <span class="md-headline">EdPanel synchronizes data from student information systems, behavior management systems,
         state exams, and other sources and puts that data at your fingertips with easy-to-use reports,
         visualizations, and decision-support tools. EdPanel is easy to customize, so you can focus your
         attention on the student data that can help you meet your school’s educational goals.</span>
-    </div>
-  </div>
-</div>
-<div class="content-section section-three" layout="column" layout-align="space-around center">
-    <h1 class="md-display-2">For all stakeholders</h1>
-    <div class="face-container" layout="row" layout-wrap layout-align="center center">
-      <div layout="column">
-        <div class="face-circle" layout="row" layout-align="center center">
-          <div class="face student"></div>
+          </div>
         </div>
-        <div class="md-title">students</div>
       </div>
-      <div layout="column">
-        <div class="face-circle" layout="row" layout-align="center center">
-          <div class="face teacher"></div>
+      <div class="content-section section-three slider-content" layout="column" layout-align="space-around center">
+        <h1 class="md-display-2">For all stakeholders</h1>
+        <div class="face-container" layout="row" layout-wrap layout-align="center center">
+          <div layout="column">
+            <div class="face-circle" layout="row" layout-align="center center">
+              <div class="face student"></div>
+            </div>
+            <div class="md-title">students</div>
+          </div>
+          <div layout="column">
+            <div class="face-circle" layout="row" layout-align="center center">
+              <div class="face teacher"></div>
+            </div>
+            <div class="md-title">teachers</div>
+          </div>
+          <div layout="column">
+            <div class="face-circle" layout="row" layout-align="center center">
+              <div class="face admin"></div>
+            </div>
+            <div class="md-title">admins</div>
+          </div>
+          <div layout="column">
+            <div class="face-circle" layout="row" layout-align="center center">
+              <div class="face parent"></div>
+            </div>
+            <div class="md-title">parents</div>
+          </div>
+          <div flex="100" layout layout-wrap layout-align="center center"><div class="md-headline" style="max-width:750px;margin-top:50px;margin-bottom:50px;">Unlocking the data within schools, EdPanel offers a differentiated and customizable user experience focused on the needs of each stakeholder</div></div>
         </div>
-        <div class="md-title">teachers</div>
       </div>
-      <div layout="column">
-        <div class="face-circle" layout="row" layout-align="center center">
-          <div class="face admin"></div>
-        </div>
-        <div class="md-title">admins</div>
-      </div>
-      <div layout="column">
-        <div class="face-circle" layout="row" layout-align="center center">
-          <div class="face parent"></div>
-        </div>
-        <div class="md-title">parents</div>
-      </div>
-      <div flex="100" layout layout-wrap layout-align="center center"><div class="md-headline" style="max-width:750px;margin-top:50px;margin-bottom:50px;">Unlocking the data within schools, EdPanel offers a differentiated and customizable user experience focused on the needs of each stakeholder</div></div>
-    </div>
-</div>
-<div class="even content-section section-three" layout-wrap layout="row" layout-align="center stretch">
-  <div class="margin-wrapper" flex="100" flex-gt-sm="50" layout="column" layout-align="center center">
-    <h1 class="md-display-2">Making every school data-driven</h1>
-    <div flex layout layout-align="center center">
-      <div flex="100" layout layout-wrap layout-align="center center"><span class="md-headline goals-description">
+      <div class="even content-section section-three slider-content" layout-wrap layout="row" layout-align="center stretch">
+        <div class="margin-wrapper" flex="100" flex-gt-sm="50" layout="column" layout-align="center center">
+          <h1 class="md-display-2">Making every school data-driven</h1>
+          <div flex layout layout-align="center center">
+            <div flex="100" layout layout-wrap layout-align="center center"><span class="md-headline goals-description">
         By giving educators the right information at the right time with support for in-product praise and goal setting,
         EdPanel makes teachers and administrators more effective, and more efficient, in their daily interactions with
         students.</span></div>
-    </div>
-  </div>
-  <div flex="100" flex-gt-sm="50" class="section-overview"></div>
-</div>
-<div class="content-section section-three performance-over-time" layout="column" layout-align="center center">
-  <div class="trends-over-time" layout="column" layout-align="space-between center">
-    <h1 class="md-display-2">Helping students learn how to succeed</h1>
-    <div class="md-headline" style="max-width:950px; padding-bottom:50px;">Students get a dashboard that
-      shows how they are doing across all the measures the school deems important.
-      Students can set goals, receive praise and feedback, see how they are progressing, and consult with teachers
-      or advisors to make adjustments to stay on track.</div>
-  </div>
-</div>
-<div class="even content-section section-four" layout-wrap layout="row" layout-align="center stretch">
-  <div flex="0" flex-gt-sm="30" class="school-histogram"></div>
-  <div flex="100" flex-gt-sm="60" layout="column" layout-align="center center">
-    <h1 class="md-display-2">Simple to use, deeply customizable</h1>
-    <span class="md-headline margin-wrapper">EdPanel comes ready to use, but also supports powerful customization and configuration options so users can get what they need from their data without additional integrations</span>
-  </div>
-</div>
+          </div>
+        </div>
+        <div flex="100" flex-gt-sm="50" class="section-overview"></div>
+      </div>
+      <div class="content-section section-three performance-over-time slider-content" layout="column" layout-align="center center">
+        <div class="trends-over-time" layout="column" layout-align="space-between center">
+          <h1 class="md-display-2">Helping students learn how to succeed</h1>
+          <div class="md-headline" style="max-width:950px; padding-bottom:50px;">Students get a dashboard that
+            shows how they are doing across all the measures the school deems important.
+            Students can set goals, receive praise and feedback, see how they are progressing, and consult with teachers
+            or advisors to make adjustments to stay on track.</div>
+        </div>
+      </div>
+      <div class="even content-section section-four slider-content" layout-wrap layout="row" layout-align="center stretch">
+        <div flex="0" flex-gt-sm="30" class="school-histogram"></div>
+        <div flex="100" flex-gt-sm="60" layout="column" layout-align="center center">
+          <h1 class="md-display-2">Simple to use, deeply customizable</h1>
+          <span class="md-headline margin-wrapper">EdPanel comes ready to use, but also supports powerful customization and configuration options so users can get what they need from their data without additional integrations</span>
+        </div>
+      </div>
+
+
 <edpanelfooter></edpanelfooter>

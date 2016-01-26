@@ -1,14 +1,41 @@
 @media(max-width: 700px) {
   h1.md-display-4 {
-    font-size: 85px;
+    max-width: 300px;
+    font-size: 45px !important;
+    line-height: 45px;
   }
 }
+
+@media(min-width: 700px) {
+  h1.md-display-4 {
+    max-width: 800px;
+    font-size: 112px !important;
+    line-height: 112px;
+  }
+}
+
+@media(min-width: 1026px) {
+  #video-button {
+    padding: 15px 35px;
+    font-size: 25px
+  }
+}
+
+@media(max-width: 1026px) {
+  #video-button {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+}
+
 .align-center {
   text-align: center;
 }
 .goals-description {
   max-width: 600px;
 }
+
+
 
 .admin-customize, .school-histogram {
   background-repeat: no-repeat;

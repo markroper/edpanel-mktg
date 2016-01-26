@@ -1,9 +1,21 @@
 #contact-us {
-  background-color: #4CAF50 !important;
   color: $large-font-gray;
 }
 
 #contact-us, #demo-button {
   padding: 5px 15px;
-  background-color: #EB5331;
+}
+
+
+
+@media(max-width: 700px) {
+  .contact-form {
+    max-width: 300px;
+  }
+}
+
+@media(min-width: 700px) {
+  .contact-form {
+    max-width: 450px;
+  }
 }
