@@ -22,9 +22,9 @@ $small-font-gray: #666666;
   color: $small-font-gray;
 }
 // injector
-@import '../components/directives/footer/edpanelfooter.scss';
 @import '../components/routecontrollers/about/about.scss';
 @import '../components/routecontrollers/land/land.scss';
 @import '../components/routecontrollers/privacy/privacy.scss';
 @import '../components/routecontrollers/root/root.scss';
+@import '../components/directives/footer/edpanelfooter.scss';
 // endinjector
