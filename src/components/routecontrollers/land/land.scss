@@ -5,37 +5,41 @@
     line-height: 45px;
     margin-bottom: 10px;
   }
+  .student-success{
+    font-size: 40px !important;
+    line-height: 40px;
+    font-weight:400;
+    color:white;
+  }
+  .student-success.success {
+    font-weight:500;
+  }
+  .success-divider {
+    height:2px;
+    background-color:#E6E6E6;
+    box-shadow: 2px 1px 4px #000000;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+  .material-icons.md-48 {
+    font-size: 40px;
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    margin-right: 15px;
+    color: rgb(174,213,129);
+  }
   .bottom-text {
     margin-bottom:10px;
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
-}
-
-.student-success{
-  font-size: 100px !important;
-  line-height: 100px !important;
-  font-weight: 300 !important;
-}
-.material-icons.md-48 {
-  font-size: 70px;
-  width:70px;
-  height:70px;
-  margin-right:20px;
-  margin-right: 30px;
-  color: rgb(174,213,129);
 }
 .material-icons.md-48.plus {
   color: #E6E6E6;
 }
-
-.material-icons.md-large {
-  font-size: 110px;
-  width:110px;
-  height:110px;
-  margin-right:20px;
-  margin-right: 30px;
-  color: rgb(174,213,129);
-}
-
 
 @media(min-width: 700px) {
   h1.md-display-4 {
@@ -43,11 +47,36 @@
     font-size: 112px !important;
     line-height: 112px;
   }
+  .student-success{
+    font-weight: 300;
+    font-size: 80px !important;
+    line-height: 80px;
+    color:#E6E6E6;
+  }
+  .student-success.success {
+    font-weight:400;
+    color:white;
+  }
+  .material-icons.md-48 {
+    font-size: 70px;
+    width:70px;
+    height:70px;
+    margin-right:20px;
+    margin-right: 30px;
+    color: white;
+  }
+  .success-divider {
+    height:3px;
+    background-color:#E6E6E6;
+    box-shadow: 2px 1px 4px #000000;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
   .bottom-text {
     margin-bottom:35px;
     h1 {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
   }
 }
